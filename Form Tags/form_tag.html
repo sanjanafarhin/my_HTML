@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Identification Form</b></legend>
+            <label for = "fname"><b>Name: </b></label>
+            <textarea id="fname" name="fname" row="4" columne="4" width="10"></textarea>
+            <br>
+            <br>
+            <label for = "age"><b> Date of birth: </b></label>
+            <input type="date" id="age" name="age">
+            <label for = "day"><b>  Week day: </b></label>
+            <input type="week" id="day" name="day">
+            <br>
+            <br>
+            <label for = "email"><b>Email: </b></label>
+            <input type="email" id="email" name="email">
+
+            <label for = "marital"><b>Marital status: </b></label>
+            <select id="marital" name="marital">
+                <option value = "Married">Married</option>
+                <option value = "single" >Single</option>
+                <option value="divorced">Divorced</option>
+            </select>
+            
+            <label for= "Gender"><b> Gender: </b></label>
+            <select id="Gender" name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+             <br>
+             <br>
+            <label for="tel"><b>Telephone: </b></label>
+            <input type="tel" id="tel" name="tel">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Security</b></legend>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass">
+
+            <label for="shift">Shift preferance:</label>
+            <input type="radio" id="shift" name="shift" value="DAY">
+            <label for="Day">Day</label>
+            <input type="radio" id="shift" name="shift" value="NIGHT">
+            <label for="Night">Night</label>
+        </fieldset>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+    </form>
+</body>
+</html>
