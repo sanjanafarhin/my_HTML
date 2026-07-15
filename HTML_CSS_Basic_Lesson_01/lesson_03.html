@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        /*
+        Hover-> transition that happens while putiing my mouse of the button
+        active->transition after click the icon or button
+        */
+        .Uber_button
+        {
+            background-color: black;
+            color:rgb(246, 246, 246);
+            height:36px;
+            width:120px;
+            border-style: none;
+            transition: opacity 0.1s;
+        }
+
+        .Uber_button:hover
+        {
+            opacity: 0.7;
+        }
+        
+        .Uber_button:active
+        {
+            opacity: 0.3;
+        }
+        
+
+         .Amazon_button
+        {
+            background-color: rgb(255,216, 20);
+            color:rgb(0, 0, 0);
+            height:36px;
+            width:170px;
+            border-style: none;
+            border-radius: 18px;
+            transition: background-color 0.1s;
+        }
+
+         .Amazon_button:hover
+         {
+            background-color: rgb(255, 81, 0);
+         }
+
+         Amazon_button:active
+         {
+            opacity: 0.5;
+         }
+
+
+        .Github_button
+        {
+            background-color: rgb(46,164, 79);
+            color:rgb(255, 255, 255);
+            height:36px;
+            width:100px;
+            border-style: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: box-shadow 0.1s;
+        }
+        .Github_button:hover
+        {
+            box-shadow: 10px 5px 10px rgba(0,0,0,0.25);
+        }
+
+        .Github_button:active
+        {
+             background-color: rgb(35, 123, 60);
+        }
+
+        .Bootstrap_Button_01
+        {
+            background-color: rgb(121,82, 179);
+            color:rgb(255, 255, 255);
+            height:36px;
+            width:110px;
+            border-style: none;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        
+        .Bootstrap_Button_01:hover
+        {
+             background-color: rgb(127, 76, 164);
+            color:rgb(255, 255, 255);
+        }
+
+         .Bootstrap_Button_01:active
+        {
+             background-color: rgb(87, 54, 110);
+            color:rgb(255, 255, 255);
+        }
+
+
+         .Bootstrap_Button_02
+        {
+            background-color: rgb(255, 255, 255);
+            color:rgb(108,117, 125);
+            height:36px;
+            width:110px;
+            border-color: rgb(108,117, 125);
+            border-width: 1px;
+            border-radius: 3px;
+            font-weight: bold;
+            transition: background-color 0.1s;
+            transition: color 0.1s;
+        }
+
+        .Bootstrap_Button_02:hover
+        {
+             background-color: rgb(108,117, 125);
+            color:rgb(255, 255, 255);
+        }
+
+         .Bootstrap_Button_02:active
+        {
+             background-color: rgb(80, 86, 94);
+            color:rgb(255, 255, 255);
+        }
+
+        .Linkedin_Button_01
+        {
+            background-color: rgb(10, 102, 194);
+            height:36px;
+            width:200px;
+            border-style: none;
+            color:white;
+            border-radius:18px ;
+            font-weight: bolder;
+            transition: background-color 0.1s;
+        }
+
+        .Linkedin_Button_01:hover
+        {
+             background-color: rgb(42, 29, 165);
+            
+        }
+
+        .Linkedin_Button_01:active
+        {
+             background-color: rgb(3, 2, 18);
+            
+        }
+
+        .linkedin_Button_02
+        {
+            background-color:white;
+            height:36px;
+            width:72px;
+            border-style: solid;
+            border-width: 2px;
+            border-color:rgb(10, 102, 194) ;
+            color:rgb(10, 102, 194);
+            border-radius:18px ;
+            font-weight:bold;
+            transition: border-width 0.1s;
+        }
+        .linkedin_Button_02:hover
+        {
+            border-width:3px;
+        }
+
+        .linkedin_Button_02:active
+        {
+            opacity :0.6;
+        }
+
+        .amazon_button_01
+        {
+            background-color:rgb(255, 216, 20) ;
+            height:30px;
+            width:100px;
+            border-style: none;
+            border-radius: 20px;
+            font-weight:300;
+            margin-right: 6px;
+            transition:background-color 0.1s
+        }
+
+        .amazon_button_01:hover
+        {
+             background-color:rgb(226, 201, 7) ;
+
+        }
+
+        .amazon_button_01:active
+        {
+             opacity: 0.6;
+
+        }
+
+         .amazon_button_02
+        {
+            background-color:rgb(255, 164, 28) ;
+            height:30px;
+            width:120px;
+            border-style: none;
+            border-radius: 20px;
+            font-weight:300;
+            transition:background-color 0.1s
+        }
+
+        .amazon_button_02:hover
+        {
+             background-color:rgb(209, 129, 16) ;
+
+        }
+
+        .amazon_button_02:active
+        {
+             opacity: 0.6;
+
+        }
+        .Title
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: large;
+            color: black;
+
+        }
+
+        .price
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            color:rgb(0, 118, 0);
+            font-weight: bold;
+            font-size:small;
+            
+        }
+
+        .delivery
+        {
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 200;
+        }
+
+        .app
+        {
+            color:rgb(10, 104, 118);
+            transition:color 0.1s;
+
+
+        }
+
+        .app:hover
+        {
+            color:rgb(255, 72, 0);
+        }
+
+
+    </style>
+
+    <p style="color:brown;font-weight: bold;">Uber "request" button:</p>
+    <button class="Uber_button">Request now</button>
+
+    <p style="color:brown;font-weight: bold;">Amazon "Add to cart" :</p>
+    <button class="Amazon_button">Add to cart</button>
+
+    <p style="color:brown;font-weight: bold;">Github "Sign up":</p>
+    <button class="Github_button">Sign up</button>
+
+    <p style="color:brown;font-weight: bold;">Bootstrap "Get started" & "download":</p>
+    <button class="Bootstrap_Button_01">Get started</button>
+    <button class="Bootstrap_Button_02">Download</button>
+
+    <p style="color:brown;font-weight: bold;">Linkedin "Apply on company website" & "save":</p>
+    <button class="Linkedin_Button_01">Apply on company website</button>
+    <button class="linkedin_Button_02">save</button>
+
+    <p style="color:brown;font-weight: bold;">Whole amazon page:</p>
+
+    <a href="https://www.amazon.com"class="App">Back to Amazon</a>
+    <p class="Title">Nike Black Running Shoes</p>
+    <p class="price">$39- in Stock.</p>
+    <p class="delivery"> Free delivery tomorrow.</p>
+    <button class="amazon_button_01">Add to cart</button>
+    <button class="amazon_button_02">Buy now</button>
+</body>
+</html>
