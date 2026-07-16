@@ -1,4 +1,4 @@
-<!--
+
 
 1. text
 - Default input type.
@@ -132,4 +132,3 @@ Example:
 
 22. time
 - Selects time only.
--->
