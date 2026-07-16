@@ -1,0 +1,22 @@
+p
+{
+    font-family:"Montserrat", sans-serif;
+    text-align: center;
+    margin:0px;
+   
+}
+.Model
+{
+    font-size: 60px;
+    font-weight: 600;
+}
+.online
+{
+
+    margin-top: 6px;
+    font-size: 30px;
+}
+.Touch
+{
+    text-decoration: underline;
+}
