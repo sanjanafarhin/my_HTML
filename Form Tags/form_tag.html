@@ -7,69 +7,105 @@
 </head>
 <body>
     <form>
+        <!-- Form is used to collect and submit user information. -->
         <fieldset>
-
+        <!-- Fieldset groups related form elements inside a bordered box. -->
+             
             <legend><b>Identification Form</b></legend>
+
+             <!-- Legend gives a title to the fieldset. -->
+             <!-- <b> displays the text in bold. -->
 
             <label for = "fname"><b>Name: </b></label>
              <textarea id="fname" name="fname" row="4" columne="4"></textarea>
 
-            <br>
-            <br>
+            <!-- Label provides a description for the input field. -->
+             <!-- Textarea creates a multi-line text box for longer input. -->
+
+            <br><!-- Break tag moves the next element to a new line. -->
+            <br> <!-- Adds an extra blank line for spacing. -->
+
 
             <label for = "age"><b> Date of birth: </b></label>
-            <input type="date" id="age" name="age">
+            <!-- Input with type="date" displays a calendar to select a date. -->
 
-            <label for = "day"><b>  Week day: </b></label>
+            <label for="day"><b>Week day:</b></label>
+
             <input type="week" id="day" name="day">
+            <!-- Input with type="week" allows selecting a specific week and year. -->
 
             <br>
             <br>
 
-            <label for = "email"><b>Email: </b></label>
+            <label for="email"><b>Email:</b></label>
+
             <input type="email" id="email" name="email">
+            <!-- Input with type="email" accepts email addresses and checks the format. -->
 
-            <label for = "marital"><b>Marital status: </b></label>
+            <label for="marital"><b>Marital Status:</b></label>
+
             <select id="marital" name="marital">
-                <option value = "Married">Married</option>
-                <option value = "single" >Single</option>
+                <!-- Select creates a drop-down list for choosing one option. -->
+
+                <option value="Married">Married</option>
+                <!-- Option defines an item inside the drop-down list. -->
+
+                <option value="single">Single</option>
+
                 <option value="divorced">Divorced</option>
             </select>
-            
-            <label for= "Gender"><b> Gender: </b></label>
+
+            <label for="Gender"><b>Gender:</b></label>
+
             <select id="Gender" name="Gender">
+                <!-- Another drop-down list for gender selection. -->
+
                 <option value="Male">Male</option>
+
                 <option value="Female">Female</option>
             </select>
 
-             <br>
-             <br>
+            <br>
+            <br>
 
-            <label for="tel"><b>Telephone: </b></label>
+            <label for="tel"><b>Telephone:</b></label>
+
             <input type="tel" id="tel" name="tel">
+            <!-- Input with type="tel" is used to enter a telephone number. -->
 
         </fieldset>
 
         <br>
 
-        <fieldset>
+        <fieldset> <!-- Groups security-related information together. -->
 
             <legend><b>Security</b></legend>
+            <!-- Displays the heading of this fieldset. -->
+
             <label for="pass">Password:</label>
+
             <input type="password" id="pass" name="pass">
+            <!-- Password input hides typed characters for privacy. -->
 
-            <label for="shift">Shift preferance:</label>
+            <label>Shift Preference:</label>
 
-            <input type="radio" id="shift" name="shift" value="DAY">
-            <label for="Day">Day</label>
+            <input type="radio" id="dayShift" name="shift" value="DAY">
+            <!-- Radio button allows selecting only one option from the group. -->
 
-            <input type="radio" id="shift" name="shift" value="NIGHT">
-            <label for="Night">Night</label>
-            
+            <label for="dayShift">Day</label>
+
+            <input type="radio" id="nightShift" name="shift" value="NIGHT">
+            <!-- Second radio button in the same group. -->
+
+            <label for="nightShift">Night</label>
+
         </fieldset>
 
-        <input type="submit" value="submit">
-        <input type="reset" value="reset">
+        <input type="submit" value="Submit">
+        <!-- Submit button sends the form data to the server. -->
+
+        <input type="reset" value="Reset">
+        <!-- Reset button clears all entered values and restores the default form. -->
 
     </form>
 </body>
