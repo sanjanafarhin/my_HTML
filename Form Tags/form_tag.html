@@ -1,37 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
     <form>
-        <!-- Form is used to collect and submit user information. -->
+
+        <!--
+        ==========================================
+                       FORM TAG
+        ==========================================
+        <form> is used to collect user input.
+
+        Attributes:
+        1. action
+        - Specifies where the form data will be sent.
+
+        2. method
+        - GET  : Sends data through the URL. Data is visible and stored in browser history.
+        - POST : Sends data in the request body. Used for inserting/updating data and is more secure.
+
+        Example:
+        <form action="submit.php" method="post">
+        </form>
+        -->
+
         <fieldset>
-        <!-- Fieldset groups related form elements inside a bordered box. -->
-             
+
+            <!-- Fieldset groups related form elements inside a bordered box. -->
+
+            <!--
+            ==========================================
+                        FIELDSET TAG
+            ==========================================
+            Creates a border around related form elements.
+
+            LEGEND TAG
+            Displays the title of the fieldset.
+            -->
+
             <legend><b>Identification Form</b></legend>
 
-             <!-- Legend gives a title to the fieldset. -->
-             <!-- <b> displays the text in bold. -->
+            <!-- <b> displays the text in bold. -->
 
-            <label for = "fname"><b>Name: </b></label>
-             <textarea id="fname" name="fname" row="4" columne="4"></textarea>
+            <label for="fname"><b>Name: </b></label>
+
+            <!--
+            ==========================================
+                        LABEL TAG
+            ==========================================
+            <label> gives a label to an input field.
+
+            Attribute:
+            for
+            - The value of "for" must match the id of the input.
+            -->
+
+            <textarea id="fname" name="fname" row="4" columne="4"></textarea>
+
+            <!--
+            ==========================================
+                        TEXTAREA TAG
+            ==========================================
+            Used for multi-line text input.
+
+            Attributes:
+            id
+            name
+            rows
+            cols
+            -->
 
             <!-- Label provides a description for the input field. -->
-             <!-- Textarea creates a multi-line text box for longer input. -->
 
-            <br><!-- Break tag moves the next element to a new line. -->
-            <br> <!-- Adds an extra blank line for spacing. -->
+            <!-- Textarea creates a multi-line text box for longer input. -->
 
+            <br>
+            <!-- Break tag moves the next element to a new line. -->
 
-            <label for = "age"><b> Date of birth: </b></label>
+            <br>
+            <!-- Adds an extra blank line for spacing. -->
+
+            <label for="age"><b> Date of birth: </b></label>
+
             <!-- Input with type="date" displays a calendar to select a date. -->
 
             <label for="day"><b>Week day:</b></label>
 
             <input type="week" id="day" name="day">
+
+            <!--
+            ==========================================
+                         INPUT TAG
+            ==========================================
+            Attributes:
+
+            type
+            - Defines the type of input.
+            Examples: text, password, email, radio, checkbox,
+            submit, reset, etc.
+
+            id
+            - Used to connect the input with the label.
+
+            name
+            - Used when sending data to the server/database.
+
+            Text Input Example
+            -->
+
             <!-- Input with type="week" allows selecting a specific week and year. -->
 
             <br>
@@ -40,61 +122,113 @@
             <label for="email"><b>Email:</b></label>
 
             <input type="email" id="email" name="email">
+
             <!-- Input with type="email" accepts email addresses and checks the format. -->
 
             <label for="marital"><b>Marital Status:</b></label>
 
-            <select id="marital" name="marital">
-                <!-- Select creates a drop-down list for choosing one option. -->
+            <!--
+            ==========================================
+                         SELECT TAG
+            ==========================================
+            Creates a dropdown list.
 
-                <option value="Married">Married</option>
-                <!-- Option defines an item inside the drop-down list. -->
+            Difference:
+            Radio Button -> Multiple choices shown.
+            Select Tag   -> Dropdown list.
 
-                <option value="single">Single</option>
+            Attributes:
+            id
+            name
+            -->
 
-                <option value="divorced">Divorced</option>
-            </select>
+            <!--
+            ==========================================
+                        OPTGROUP TAG
+            ==========================================
+            Used to group related options inside a dropdown.
 
-            <label for="Gender"><b>Gender:</b></label>
+                </optgroup>
 
-            <select id="Gender" name="Gender">
-                <!-- Another drop-down list for gender selection. -->
+                <optgroup label="Drink">
 
-                <option value="Male">Male</option>
+                    <option value="cola">Cola</option>
+                    <option value="juice">Juice</option>
 
-                <option value="Female">Female</option>
-            </select>
+                </optgroup>
+            -->
 
-            <br>
-            <br>
+            <h2>Optgroup Example</h2>
 
-            <label for="tel"><b>Telephone:</b></label>
+            <label for="foods">Choose Food:</label>
 
-            <input type="tel" id="tel" name="tel">
-            <!-- Input with type="tel" is used to enter a telephone number. -->
+            <select id="food" name="food">
+
+                <optgroup label="Appetizer">
+
+                    <select id="marital" name="marital">
+
+                        <!-- Select creates a drop-down list for choosing one option. -->
+
+                        <option value="Married">Married</option>
+
+                        <!-- Option defines an item inside the drop-down list. -->
+
+                        <option value="single">Single</option>
+
+                        <option value="divorced">Divorced</option>
+
+                    </select>
+
+                    <label for="Gender"><b>Gender:</b></label>
+
+                    <select id="Gender" name="Gender">
+
+                        <!-- Another drop-down list for gender selection. -->
+
+                        <option value="Male">Male</option>
+
+                        <option value="Female">Female</option>
+
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="tel"><b>Telephone:</b></label>
+
+                    <input type="tel" id="tel" name="tel">
+
+                    <!-- Input with type="tel" is used to enter a telephone number. -->
 
         </fieldset>
 
         <br>
 
-        <fieldset> <!-- Groups security-related information together. -->
+        <fieldset>
+
+            <!-- Groups security-related information together. -->
 
             <legend><b>Security</b></legend>
+
             <!-- Displays the heading of this fieldset. -->
 
             <label for="pass">Password:</label>
 
             <input type="password" id="pass" name="pass">
+
             <!-- Password input hides typed characters for privacy. -->
 
             <label>Shift Preference:</label>
 
             <input type="radio" id="dayShift" name="shift" value="DAY">
+
             <!-- Radio button allows selecting only one option from the group. -->
 
             <label for="dayShift">Day</label>
 
             <input type="radio" id="nightShift" name="shift" value="NIGHT">
+
             <!-- Second radio button in the same group. -->
 
             <label for="nightShift">Night</label>
@@ -102,11 +236,15 @@
         </fieldset>
 
         <input type="submit" value="Submit">
+
         <!-- Submit button sends the form data to the server. -->
 
         <input type="reset" value="Reset">
+
         <!-- Reset button clears all entered values and restores the default form. -->
 
     </form>
+
 </body>
+
 </html>
